@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f2ec470f-9f42-4fa1-ab74-29dc257c9d93" isOneWay="false" action="" name="getCustomerById" bindingOperationName="getCustomerById" type="Request-Response" outputName="getCustomerByIdResponse" inputName="getCustomerByIdRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="f2ec470f-9f42-4fa1-ab74-29dc257c9d93fileName">getCustomerById</con:setting></con:settings><con:call id="2d12cc85-0f66-4537-8c38-9422fdc9d4ca" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://d1psesbcust1.cbr.nl:9081/CustomerInformationMediationModuleWeb/sca/WSCustomerService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://cbr.nl/Relations/CustomerService/2016/03">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:getCustomerById>\r
+         <getCustomerByIdRequest>\r
+            <customerId>?</customerId>\r
+         </getCustomerByIdRequest>\r
+      </ns:getCustomerById>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://cbr.nl/Relations/CustomerService/2016/03/Binding/CustomerInterface/getCustomerByIdRequest"/></con:call></con:operation>
